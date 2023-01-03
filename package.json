@@ -19,5 +19,9 @@
   "homepage": "https://github.com/alexandrashelley/blackjack-js#readme",
   "dependencies": {
     "jest": "^29.3.1"
+  },
+  "devDependencies": {
+    "jest-fetch-mock": "^3.0.3",
+    "jest-mock-random": "^1.1.1"
   }
 }
