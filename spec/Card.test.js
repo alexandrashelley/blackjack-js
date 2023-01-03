@@ -14,4 +14,9 @@ describe("the Card object", () => {
     const card = new Card;
     expect(card.getCard()).toMatch(/(Diamonds|Hearts|Spades|Clubs)/)
   });
+
+  it("the getCard method always returns a value", () => {
+    const card = new Card;
+    expect(card.getCard()).toMatch(/(Ace|1|2|3|4|5|6|7|8|9|10|Jack|Queen|King)/)
+  });
 });
