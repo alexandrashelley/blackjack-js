@@ -12,4 +12,11 @@ describe("the Card object", () => {
     const result = card.getSuit();
     expect(result).toBe(card.suit)
   });
+
+  it("shows the card", () => {
+    const card = new Card();
+    card.value = "Jack";
+    card.suit = "Spades";
+    expect(card.showCard()).toBe("Jack of Spades")
+  })
 });
