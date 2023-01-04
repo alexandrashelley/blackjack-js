@@ -6,4 +6,9 @@ describe("the Deck object", () => {
     const deck = new Deck();
     expect(deck.deck).toEqual([]);
   });
+
+  it("A deck is initialised with an array", () => {
+    const deck = new Deck();
+    expect(deck.deck).toEqual([]);
+  });
 });
