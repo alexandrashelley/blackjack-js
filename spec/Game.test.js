@@ -1,3 +1,4 @@
+const Deck = require("../lib/Deck");
 const Game = require("../lib/Game");
 
 describe("the Game object", () => {
