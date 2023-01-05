@@ -2,7 +2,7 @@ const Deck = require("../lib/Deck");
 const Card = require("../lib/Card");
 
 describe("the Deck object", () => {
-  it("the createDeck method populates the deck with 52 cards", () => {
+  it("a new deck is instantiated with 52 cards", () => {
     const deck = new Deck();
     expect(deck.deck.length).toEqual(52);
   });
