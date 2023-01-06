@@ -20,4 +20,13 @@ describe("the Hand object", () => {
     const result = hand.getHandValue();
     expect(result).toBe(19);
   });
+
+  it("addNCardsToHand pushes cards into hand", () => {
+    const hand = new Hand();
+    const card = [
+      { suit: "Diamonds", value: "9" },
+    ];
+    hand.addNCardsToHand(card);
+    expect(hand.hand).toEqual([{"suit": "Diamonds", "value": "9"}]);
+  });
 });
