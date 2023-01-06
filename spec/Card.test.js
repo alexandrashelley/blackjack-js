@@ -15,7 +15,7 @@ describe("the Card object", () => {
 
   it("shows the card", () => {
     const card = new Card();
-    card.value = "Jack";
+    card.face = "Jack";
     card.suit = "Spades";
     expect(card.showCard()).toBe("Jack of Spades")
   })
