@@ -1,5 +1,5 @@
-const readlineSync = require("readline-sync");
 const Game = require("../lib/Game");
+const Card = require("../lib/Card")
 
 describe("the Game object", () => {
   it("initialising a new Game deals a hand with 2 cards", () => {
@@ -39,5 +39,12 @@ describe("the Game object", () => {
     game.dealHand();
     game.hit();
     expect(game.hand.hand.length).toBe(3);
+  });
+
+  it("if the player chooses stand, score is returned", () => {
+    const game = new Game();
+    game.hand.addNCardsToHand([new Card("Diamonds", "Ace", "11")])
+    const result = game.stand();
+    expect(result).toBe(11)
   });
 });
