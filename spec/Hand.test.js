@@ -80,4 +80,27 @@ describe("the Hand object", () => {
     const result = hand.calculateHandValue();
     expect(result).toBe(12);
   });
+
+  it("if the player's total hand value exceeds 21, player is bust", () => {
+    const hand = new Hand();
+    const cards = [
+      { suit: "Diamonds", value: "10" },
+      { suit: "Hearts", value: "10" },
+      { suit: "Spades", value: "10" },
+    ];
+    hand.addNCardsToHand(cards);
+    const result = hand.hasBust();
+    expect(result).toBe(true);
+  });
+
+  it("if the player's total hand value exceeds 21, player is bust", () => {
+    const hand = new Hand();
+    const cards = [
+      { suit: "Diamonds", value: "11" },
+      { suit: "Hearts", value: "9" },
+    ];
+    hand.addNCardsToHand(cards);
+    const result = hand.hasBust();
+    expect(result).toBe(false);
+  });
 });
