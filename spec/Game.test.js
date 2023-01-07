@@ -1,5 +1,5 @@
 const Game = require("../lib/Game");
-const Card = require("../lib/Card")
+const Card = require("../lib/Card");
 
 describe("the Game object", () => {
   it("initialising a new Game deals a hand with 2 cards", () => {
@@ -43,8 +43,23 @@ describe("the Game object", () => {
 
   it("if the player chooses stand, score is returned", () => {
     const game = new Game();
-    game.hand.addNCardsToHand([new Card("Diamonds", "Ace", "11")])
+    game.hand.addNCardsToHand([new Card("Diamonds", "Ace", "11")]);
     const result = game.stand();
-    expect(result).toBe(11)
+    expect(result).toBe(11);
+  });
+
+  it("if the player chooses stand, score is returned", () => {
+    const game = new Game();
+    game.hand.addNCardsToHand([new Card("Diamonds", "Ace", "11")]);
+    const result = game.stand();
+    expect(result).toBe(11);
+  });
+
+  it("if the player chooses hit when game is over, error is thrown", () => {
+    const game = new Game();
+    game.gameIsOver = true;
+    expect(() => {
+      game.hit();
+    }).toThrow("Cannot hit when hand is bust");
   });
 });
