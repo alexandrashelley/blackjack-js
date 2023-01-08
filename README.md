@@ -20,10 +20,6 @@ After completing the game (win or lose), the player is asked if they wish to pla
 ## Future work
 As mentioned already, I would like to add a dealer to the game who the player competes against. The winner is whoever's hand is closest to 21, without going over.
 
-The next iteration would include a nicer-looking terminal, with some ASCII art (a cool retro feel!):
- ___   ___
-|K  | |7  |
-| ♠ | | ♦ |
-|__K| |__7|
+The next iteration would include a nicer-looking terminal, with some ASCII art (a cool retro feel!)
 
 Eventually I'd like to make a HTML page of the game.
