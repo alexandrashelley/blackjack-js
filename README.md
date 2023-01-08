@@ -5,7 +5,7 @@ Welcome to one of my most recent projects; Blackjack (terminal-only), written in
 ```npm install```  
 
 ## Gameplay
-```node index.js```
+```npm start```
 
 ## Approach
 
