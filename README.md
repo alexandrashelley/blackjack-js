@@ -2,9 +2,9 @@
 Welcome to one of my most recent projects; Blackjack (terminal-only), written in JavaScript and tested with Jest.
 
 ## Requirements
-```npm install```
-```npm install --save-dev jest```
-```npm i readline-sync```
+```npm install```  
+```npm install --save-dev jest```  
+```npm i readline-sync```  
 
 ## Gameplay
 ```node index.js```
