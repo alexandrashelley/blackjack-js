@@ -6,7 +6,7 @@ describe("the Deck object", () => {
     expect(deck.deck.length).toEqual(52);
   });
 
-  xit("the shuffleCards function shuffles the deck", () => {
+  it("the shuffleCards function shuffles the deck", () => {
     const deck = new Deck();
     deck.deck = [1, 2];
     deck.shuffle();
