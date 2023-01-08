@@ -16,8 +16,8 @@ describe("the Deck object", () => {
 
   it("the getTopCard function gets top card from the deck", () => {
     const deck = new Deck();
-    console.log(deck.deck)
-    const result = deck.getTopCard();
-    expect(result).toEqual([{"face": "2", "suit": "Diamonds", "value": 2}])
+    const result = deck.getTopCard(1);
+    expect(deck.deck.length).toBe(51)
+    expect(deck.deck).not.toContain(result)
   });
 });
