@@ -1,5 +1,4 @@
 const Deck = require("../lib/Deck");
-const Card = require("../lib/Card");
 
 describe("the Deck object", () => {
   it("a new deck is instantiated with 52 cards", () => {
