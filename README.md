@@ -3,8 +3,6 @@ Welcome to one of my most recent projects; Blackjack (terminal-only), written in
 
 ## Requirements
 ```npm install```  
-```npm install --save-dev jest```  
-```npm i readline-sync```  
 
 ## Gameplay
 ```node index.js```
