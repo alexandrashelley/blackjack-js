@@ -7,6 +7,10 @@ Welcome to one of my most recent projects; Blackjack (terminal-only), written in
 ## Gameplay
 ```npm start```
 
+## Plan
+
+https://excalidraw.com/#room=1cc28144bae16c9744ae,9XaDzu-2aKkDudv0HKjjuw
+
 ## Approach
 
 For now, this game is run solely through the terminal. It is also one player, meaning, as of yet, the player plays against themselves (and not a computer-automated dealer). 
@@ -21,3 +25,4 @@ As mentioned already, I would like to add a dealer to the game who the player co
 The next iteration would include a nicer-looking terminal, with some ASCII art (a cool retro feel!)
 
 Eventually I'd like to make a HTML page of the game.
+
